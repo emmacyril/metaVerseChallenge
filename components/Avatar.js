@@ -7,6 +7,8 @@ function Avatar({ username, logoutOnPress }) {
     <Image
       className="rounded-full bg-black cursor-pointer hover:opacity-75"
       layout="fill"
+      objectFit="cover"
+      priority="true"
       onClick={() => logoutOnPress && logout()}
       src={`https://avatars.dicebear.com/api/pixel-art/${
         username || user.get("username")
