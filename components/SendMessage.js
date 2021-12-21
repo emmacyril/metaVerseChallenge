@@ -28,7 +28,7 @@ function SendMessage({ endOfMessageRef }) {
     setMessage("");
   };
   return (
-    <form className="flex fixed bottom-10 px-6 py-2 w-11/12 bg-black opacity-80 max-w-2xl shadow-xl rounded-full border-4 border-blue-400 z-50">
+    <form className="flex relative bottom-10 px-6 py-2 mt-20 w-11/12 bg-black opacity-80 max-w-2xl shadow-xl rounded-full border-4 border-blue-400 z-50">
       <input
         className="flex-grow border-0 outline-none bg-transparent text-white placeholder-gray-500 pr-5 ring-0 focus:ring-0"
         placeholder={`Start typing ${user.get("username")}`}
